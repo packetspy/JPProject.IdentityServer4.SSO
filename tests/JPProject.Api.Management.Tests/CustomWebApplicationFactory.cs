@@ -53,7 +53,7 @@ namespace JPProject.Api.Management.Tests
                     .ConfigureJpAdminStorageServices()
                     .SetupDefaultIdentityServerContext<SsoContext>();
 
-                services.UpgradePasswordSecurity().UseArgon2<UserIdentity>();
+                //services.UpgradePasswordSecurity().UseArgon2<UserIdentity>();
                 services.PostConfigureAll<IdentityServerAuthenticationOptions>(options =>
                 {
                     options.Authority = "http://localhost";

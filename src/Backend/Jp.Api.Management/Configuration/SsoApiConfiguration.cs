@@ -40,7 +40,7 @@ namespace Jp.Api.Management.Configuration
                 .SetupDefaultIdentityServerContext<SsoContext>();
 
 
-            services.UpgradePasswordSecurity().UseArgon2<UserIdentity>();
+            //services.UpgradePasswordSecurity().UseArgon2<UserIdentity>();
 
             SetupGeneralAuthorizationSettings(services);
 
